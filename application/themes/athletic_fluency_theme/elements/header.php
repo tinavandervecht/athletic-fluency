@@ -1,8 +1,5 @@
 <?php defined('C5_EXECUTE') or die("Access Denied."); ?>
-
-<?php
-$u = new User;
-?>
+<?php $u = new User; ?>
 
 <!DOCTYPE html>
 <html lang="<?php echo Localization::activeLanguage() ?>">
@@ -12,10 +9,19 @@ $u = new User;
     <meta charset="utf-8">
     <?php Loader::element('header_required'); ?>
 
+    <!-- Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'/>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,900|Yantramanav:300,700" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="<?php echo $this->getThemePath(); ?>/css/slick.css" rel="stylesheet" type="text/css"/>
     <link href="<?php echo $this->getThemePath(); ?>/css/app.css" rel="stylesheet" type="text/css"/>
 
+    <!-- Javascript -->
+    <?php
+    if(!$u->isLoggedIn() || $u->isLoggedIn() && !$u->superUser) : ?>
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <?php endif; ?>
     <script>
         if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
             var msViewportStyle = document.createElement('style');

@@ -20,11 +20,17 @@ elixir(function (mix) {
         style: inProduction ? "compressed" : ""
     });
 
+    mix.compass('slick.scss', baseThemePath + '/css', {
+        require: ['sass-globbing'],
+        style: inProduction ? "compressed" : ""
+    });
+
     /* ----
     Scripts processing
     (with Browserify)
     ---- */
     mix.browserify('app.js', baseThemePath + '/js');
+    mix.copy(baseThemePath + '/assets/js/vendors/slick.js', baseThemePath + '/js/vendors');
 
     /* ----
     Copy images over

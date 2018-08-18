@@ -1,0 +1,27 @@
+.slick-slider {
+    .slick-list {
+        margin-left:-$spacing;
+        margin-right:-$spacing;
+    }
+
+    .slick-slide {
+        margin-left:$spacing;
+        margin-right:$spacing;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top: 34%;
+        background: none;
+        border: none;
+        font-size: 26px;
+
+        &.slick-prev {
+            left:-50px;
+        }
+
+        &.slick-next {
+            right:-50px;
+        }
+    }
+}

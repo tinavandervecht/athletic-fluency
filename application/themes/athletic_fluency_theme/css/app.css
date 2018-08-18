@@ -8857,6 +8857,33 @@ section {
   color: #FFFFFF;
 }
 
+/* line 2, ../assets/sass/components/_sliders.scss */
+.slick-slider .slick-list {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+/* line 7, ../assets/sass/components/_sliders.scss */
+.slick-slider .slick-slide {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+/* line 12, ../assets/sass/components/_sliders.scss */
+.slick-slider .slick-arrow {
+  position: absolute;
+  top: 34%;
+  background: none;
+  border: none;
+  font-size: 26px;
+}
+/* line 19, ../assets/sass/components/_sliders.scss */
+.slick-slider .slick-arrow.slick-prev {
+  left: -50px;
+}
+/* line 23, ../assets/sass/components/_sliders.scss */
+.slick-slider .slick-arrow.slick-next {
+  right: -50px;
+}
+
 /* line 1, ../assets/sass/components/_angles.scss */
 .angles {
   position: absolute;
@@ -8981,7 +9008,11 @@ nav ul li a:hover:before, .nav ul li a:hover:before {
   background: #f9f9f9;
 }
 
-/* line 3, ../assets/sass/layouts/_featured_athletes.scss */
+/* line 1, ../assets/sass/layouts/_featured_athletes.scss */
+.featured_athletes {
+  color: #FFFFFF;
+}
+/* line 5, ../assets/sass/layouts/_featured_athletes.scss */
 .featured_athletes .angles .angle {
   text-align: center;
   background: #d52329;
@@ -9011,4 +9042,25 @@ nav ul li a:hover:before, .nav ul li a:hover:before {
 /* line 29, ../assets/sass/mixins/_angle.scss */
 .featured_athletes .angles .angle._third {
   bottom: -134%;
+}
+/* line 10, ../assets/sass/layouts/_featured_athletes.scss */
+.featured_athletes .featured-athletes-slider {
+  margin-top: 80px;
+}
+/* line 13, ../assets/sass/layouts/_featured_athletes.scss */
+.featured_athletes .featured-athletes-slider .slick-slide {
+  background: #000;
+  padding: 48px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+/* line 20, ../assets/sass/layouts/_featured_athletes.scss */
+.featured_athletes .featured-athletes-slider .slick-slide img {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 48px auto;
 }

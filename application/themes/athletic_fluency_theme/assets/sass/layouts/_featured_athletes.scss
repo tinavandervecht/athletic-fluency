@@ -1,7 +1,28 @@
 .featured_athletes {
+    color:#FFFFFF;
+
     .angles {
         .angle {
             @include angle($brand-primary, true);
+        }
+    }
+
+    .featured-athletes-slider {
+        margin-top:($spacing * 5);
+
+        .slick-slide {
+            background:#000;
+            padding:$spacing * 3;
+            font-family:$font-family-serif;
+            text-transform:uppercase;
+            font-size:14px;
+
+            img {
+                @include border-radius(50%);
+                width:150px;
+                height:150px;
+                margin:0 auto ($spacing * 3) auto;
+            }
         }
     }
 }
