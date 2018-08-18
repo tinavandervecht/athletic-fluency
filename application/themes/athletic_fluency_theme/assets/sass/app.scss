@@ -1,10 +1,7 @@
 @import "abstracts/variables";
 
+/*-- External Imports --*/
 @import "compass/css3";
-
-/***********************
-* Node Modules
-*************************/
 @import '../../../../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
 
 /*-- Mixins --*/
@@ -21,3 +18,5 @@
 
 /*-- Layout Styles --*/
 @import "layouts/hero";
+@import "layouts/about";
+@import "layouts/featured_athletes";

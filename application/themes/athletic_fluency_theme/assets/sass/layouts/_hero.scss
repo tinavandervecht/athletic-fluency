@@ -3,6 +3,7 @@
     text-align:center;
     padding:($spacing * 2) 0;
     color:#ffffff;
+    position:relative;
 
     .logo {
         margin-top:50px;
@@ -11,10 +12,6 @@
             max-width:350px;
             margin:0 auto;
         }
-    }
-
-    h1 {
-        font-size:60px;
     }
 
     h2 {

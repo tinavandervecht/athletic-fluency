@@ -1,7 +1,9 @@
 @charset "UTF-8";
-/***********************
-* Node Modules
-*************************/
+/*-- Colours --*/
+/*-- Fonts --*/
+/*-- Font Sizes --*/
+/*-- Spacing --*/
+/*-- External Imports --*/
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -1720,10 +1722,10 @@ html {
 
 /* line 27, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss */
 body {
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 16px;
   line-height: 1.42857;
-  color: #333333;
+  color: #000;
   background-color: #fff;
 }
 
@@ -1797,8 +1799,8 @@ img {
 
 /* line 113, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss */
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 22px;
+  margin-bottom: 22px;
   border: 0;
   border-top: 1px solid #eeeeee;
 }
@@ -1862,8 +1864,8 @@ h6 .small,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 22px;
+  margin-bottom: 11px;
 }
 /* line 30, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 h1 small,
@@ -1882,8 +1884,8 @@ h3 .small, .h3 small,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 11px;
+  margin-bottom: 11px;
 }
 /* line 41, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 h4 small,
@@ -1900,57 +1902,57 @@ h6 .small, .h6 small,
 
 /* line 47, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 h1, .h1 {
-  font-size: 36px;
+  font-size: 60px;
 }
 
 /* line 48, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 h2, .h2 {
-  font-size: 30px;
+  font-size: 34px;
 }
 
 /* line 49, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 h3, .h3 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 /* line 50, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 h4, .h4 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* line 51, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 h5, .h5 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* line 52, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 h6, .h6 {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* line 58, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 p {
-  margin: 0 0 10px;
+  margin: 0 0 11px;
 }
 
 /* line 62, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .lead {
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-bottom: 22px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
   /* line 62, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
   .lead {
-    font-size: 21px;
+    font-size: 24px;
   }
 }
 
 /* line 78, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 small,
 .small {
-  font-size: 85%;
+  font-size: 87%;
 }
 
 /* line 83, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
@@ -2122,8 +2124,8 @@ a.bg-danger:focus {
 
 /* line 138, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 .page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
+  padding-bottom: 10px;
+  margin: 44px 0 22px;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -2131,7 +2133,7 @@ a.bg-danger:focus {
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 /* line 153, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 ul ul,
@@ -2163,7 +2165,7 @@ ol ol {
 /* line 185, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 dl {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 /* line 189, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
@@ -2222,9 +2224,9 @@ abbr[data-original-title] {
 
 /* line 241, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  font-size: 17.5px;
+  padding: 11px 22px;
+  margin: 0 0 22px;
+  font-size: 20px;
   border-left: 5px solid #eeeeee;
 }
 /* line 250, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
@@ -2279,7 +2281,7 @@ blockquote.pull-right .small:after {
 
 /* line 294, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 address {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-style: normal;
   line-height: 1.42857;
 }
@@ -2321,9 +2323,9 @@ kbd kbd {
 /* line 41, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_code.scss */
 pre {
   display: block;
-  padding: 9.5px;
-  margin: 0 0 10px;
-  font-size: 13px;
+  padding: 10.5px;
+  margin: 0 0 11px;
+  font-size: 15px;
   line-height: 1.42857;
   word-break: break-all;
   word-wrap: break-word;
@@ -2352,8 +2354,8 @@ pre code {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 /* line 14, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 .container:before, .container:after {
@@ -2367,19 +2369,19 @@ pre code {
 @media (min-width: 768px) {
   /* line 10, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss */
   .container {
-    width: 750px;
+    width: 784px;
   }
 }
 @media (min-width: 992px) {
   /* line 10, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss */
   .container {
-    width: 970px;
+    width: 1004px;
   }
 }
 @media (min-width: 1200px) {
   /* line 10, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss */
   .container {
-    width: 1170px;
+    width: 1204px;
   }
 }
 
@@ -2387,8 +2389,8 @@ pre code {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 /* line 14, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 .container-fluid:before, .container-fluid:after {
@@ -2402,8 +2404,8 @@ pre code {
 
 /* line 39, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss */
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -32px;
+  margin-right: -32px;
 }
 /* line 14, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 .row:before, .row:after {
@@ -2419,8 +2421,8 @@ pre code {
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 /* line 27, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
@@ -3488,7 +3490,7 @@ th {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 /* line 31, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_tables.scss */
 .table > thead > tr > th,
@@ -3688,7 +3690,7 @@ table th[class*="col-"] {
   /* line 171, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_tables.scss */
   .table-responsive {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 16.5px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #ddd;
@@ -3750,8 +3752,8 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
+  margin-bottom: 22px;
+  font-size: 24px;
   line-height: inherit;
   color: #333333;
   border: 0;
@@ -3810,7 +3812,7 @@ input[type="checkbox"]:focus {
 output {
   display: block;
   padding-top: 7px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857;
   color: #555555;
 }
@@ -3819,9 +3821,9 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 34px;
+  height: 36px;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857;
   color: #555555;
   background-color: #fff;
@@ -3885,7 +3887,7 @@ input[type="search"] {
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
-    line-height: 34px;
+    line-height: 36px;
   }
   /* line 197, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
   input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control,
@@ -3906,7 +3908,7 @@ input[type="search"] {
   .input-group-sm > input[type="month"].input-group-addon,
   .input-group-sm > .input-group-btn > input[type="month"].btn, .input-group-sm
   input[type="month"] {
-    line-height: 30px;
+    line-height: 33px;
   }
   /* line 202, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
   input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control,
@@ -3927,7 +3929,7 @@ input[type="search"] {
   .input-group-lg > input[type="month"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg
   input[type="month"] {
-    line-height: 46px;
+    line-height: 49px;
   }
 }
 /* line 215, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
@@ -3946,7 +3948,7 @@ input[type="search"] {
 /* line 231, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .radio label,
 .checkbox label {
-  min-height: 20px;
+  min-height: 22px;
   padding-left: 20px;
   margin-bottom: 0;
   font-weight: normal;
@@ -4015,7 +4017,7 @@ input[type="checkbox"] {
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
-  min-height: 34px;
+  min-height: 38px;
 }
 /* line 315, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .form-control-static.input-lg, .input-group-lg > .form-control-static.form-control,
@@ -4031,9 +4033,9 @@ input[type="checkbox"] {
 .input-sm, .input-group-sm > .form-control,
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn {
-  height: 30px;
+  height: 33px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -4042,8 +4044,8 @@ input[type="checkbox"] {
 select.input-sm, .input-group-sm > select.form-control,
 .input-group-sm > select.input-group-addon,
 .input-group-sm > .input-group-btn > select.btn {
-  height: 30px;
-  line-height: 30px;
+  height: 33px;
+  line-height: 33px;
 }
 
 /* line 84, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss */
@@ -4059,16 +4061,16 @@ select[multiple].input-sm,
 
 /* line 333, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-sm .form-control {
-  height: 30px;
+  height: 33px;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px;
 }
 /* line 340, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-sm select.form-control {
-  height: 30px;
-  line-height: 30px;
+  height: 33px;
+  line-height: 33px;
 }
 /* line 344, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-sm textarea.form-control,
@@ -4077,10 +4079,10 @@ select[multiple].input-sm,
 }
 /* line 348, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-sm .form-control-static {
-  height: 30px;
-  min-height: 32px;
+  height: 33px;
+  min-height: 36px;
   padding: 6px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -4088,9 +4090,9 @@ select[multiple].input-sm,
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 46px;
+  height: 49px;
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33333;
   border-radius: 6px;
 }
@@ -4099,8 +4101,8 @@ select[multiple].input-sm,
 select.input-lg, .input-group-lg > select.form-control,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn {
-  height: 46px;
-  line-height: 46px;
+  height: 49px;
+  line-height: 49px;
 }
 
 /* line 84, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss */
@@ -4116,16 +4118,16 @@ select[multiple].input-lg,
 
 /* line 359, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-lg .form-control {
-  height: 46px;
+  height: 49px;
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33333;
   border-radius: 6px;
 }
 /* line 366, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-lg select.form-control {
-  height: 46px;
-  line-height: 46px;
+  height: 49px;
+  line-height: 49px;
 }
 /* line 370, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-lg textarea.form-control,
@@ -4134,10 +4136,10 @@ select[multiple].input-lg,
 }
 /* line 374, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-lg .form-control-static {
-  height: 46px;
-  min-height: 38px;
+  height: 49px;
+  min-height: 42px;
   padding: 11px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33333;
 }
 
@@ -4147,7 +4149,7 @@ select[multiple].input-lg,
 }
 /* line 393, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .has-feedback .form-control {
-  padding-right: 42.5px;
+  padding-right: 45px;
 }
 
 /* line 398, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
@@ -4157,9 +4159,9 @@ select[multiple].input-lg,
   right: 0;
   z-index: 2;
   display: block;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
   text-align: center;
   pointer-events: none;
 }
@@ -4170,9 +4172,9 @@ select[multiple].input-lg,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
-  width: 46px;
-  height: 46px;
-  line-height: 46px;
+  width: 49px;
+  height: 49px;
+  line-height: 49px;
 }
 
 /* line 417, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
@@ -4181,9 +4183,9 @@ select[multiple].input-lg,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 33px;
+  height: 33px;
+  line-height: 33px;
 }
 
 /* line 8, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_forms.scss */
@@ -4284,7 +4286,7 @@ select[multiple].input-lg,
 
 /* line 439, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .has-feedback label ~ .form-control-feedback {
-  top: 25px;
+  top: 27px;
 }
 /* line 442, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .has-feedback label.sr-only ~ .form-control-feedback {
@@ -4296,7 +4298,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373;
+  color: #404040;
 }
 
 @media (min-width: 768px) {
@@ -4373,12 +4375,12 @@ select[multiple].input-lg,
 /* line 569, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 27px;
+  min-height: 29px;
 }
 /* line 575, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .form-horizontal .form-group {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -32px;
+  margin-right: -32px;
 }
 /* line 14, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 .form-horizontal .form-group:before, .form-horizontal .form-group:after {
@@ -4399,20 +4401,20 @@ select[multiple].input-lg,
 }
 /* line 593, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
 .form-horizontal .has-feedback .form-control-feedback {
-  right: 15px;
+  right: 32px;
 }
 @media (min-width: 768px) {
   /* line 603, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
   .form-horizontal .form-group-lg .control-label {
     padding-top: 11px;
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (min-width: 768px) {
   /* line 611, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -4429,7 +4431,7 @@ select[multiple].input-lg,
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857;
   border-radius: 4px;
   -webkit-user-select: none;
@@ -4769,7 +4771,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 /* line 135, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-lg, .btn-group-lg > .btn {
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33333;
   border-radius: 6px;
 }
@@ -4777,7 +4779,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 /* line 139, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-sm, .btn-group-sm > .btn {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -4785,7 +4787,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 /* line 143, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-xs, .btn-group-xs > .btn {
   padding: 1px 5px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   border-radius: 3px;
 }
@@ -4888,7 +4890,7 @@ tbody.collapse.in {
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -4906,7 +4908,7 @@ tbody.collapse.in {
 /* line 60, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_dropdowns.scss */
 .dropdown-menu .divider {
   height: 1px;
-  margin: 9px 0;
+  margin: 10px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -4974,7 +4976,7 @@ tbody.collapse.in {
 .dropdown-header {
   display: block;
   padding: 3px 20px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.42857;
   color: #777777;
   white-space: nowrap;
@@ -5320,7 +5322,7 @@ tbody.collapse.in {
 /* line 77, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_input-groups.scss */
 .input-group-addon {
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1;
   color: #555555;
@@ -5334,7 +5336,7 @@ tbody.collapse.in {
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 3px;
 }
 /* line 94, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_input-groups.scss */
@@ -5342,7 +5344,7 @@ tbody.collapse.in {
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn {
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
   border-radius: 6px;
 }
 /* line 101, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_input-groups.scss */
@@ -5465,7 +5467,7 @@ tbody.collapse.in {
 /* line 59, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss */
 .nav .nav-divider {
   height: 1px;
-  margin: 9px 0;
+  margin: 10px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
@@ -5614,7 +5616,7 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   border: 1px solid transparent;
 }
 /* line 14, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
@@ -5652,8 +5654,8 @@ tbody.collapse.in {
 /* line 50, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-collapse {
   overflow-x: visible;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 32px;
+  padding-left: 32px;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;
@@ -5714,8 +5716,8 @@ tbody.collapse.in {
 .container > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -32px;
+  margin-left: -32px;
 }
 @media (min-width: 768px) {
   /* line 108, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
@@ -5772,9 +5774,9 @@ tbody.collapse.in {
 /* line 163, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
+  padding: 14px 32px;
+  font-size: 20px;
+  line-height: 22px;
   height: 50px;
 }
 /* line 170, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
@@ -5788,7 +5790,7 @@ tbody.collapse.in {
 @media (min-width: 768px) {
   /* line 180, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-    margin-left: -15px;
+    margin-left: -32px;
   }
 }
 
@@ -5796,7 +5798,7 @@ tbody.collapse.in {
 .navbar-toggle {
   position: relative;
   float: right;
-  margin-right: 15px;
+  margin-right: 32px;
   padding: 9px 10px;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -5829,13 +5831,13 @@ tbody.collapse.in {
 
 /* line 232, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav {
-  margin: 7.5px -15px;
+  margin: 7px -32px;
 }
 /* line 235, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 20px;
+  line-height: 22px;
 }
 @media (max-width: 767px) {
   /* line 243, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
@@ -5855,7 +5857,7 @@ tbody.collapse.in {
   }
   /* line 255, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 20px;
+    line-height: 22px;
   }
   /* line 257, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -5874,22 +5876,22 @@ tbody.collapse.in {
   }
   /* line 272, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }
 
 /* line 286, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-form {
-  margin-left: -15px;
-  margin-right: -15px;
-  padding: 10px 15px;
+  margin-left: -32px;
+  margin-right: -32px;
+  padding: 10px 32px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 @media (min-width: 768px) {
   /* line 478, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss */
@@ -5994,13 +5996,13 @@ tbody.collapse.in {
 
 /* line 343, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 /* line 346, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 8.5px;
+  margin-bottom: 8.5px;
 }
 /* line 349, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn {
@@ -6010,15 +6012,15 @@ tbody.collapse.in {
 
 /* line 359, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-text {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 @media (min-width: 768px) {
   /* line 359, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-text {
     float: left;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 }
 
@@ -6031,7 +6033,7 @@ tbody.collapse.in {
   /* line 382, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-right {
     float: right !important;
-    margin-right: -15px;
+    margin-right: -32px;
   }
   /* line 386, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-right ~ .navbar-right {
@@ -6251,7 +6253,7 @@ tbody.collapse.in {
 /* line 6, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_breadcrumbs.scss */
 .breadcrumb {
   padding: 8px 15px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   list-style: none;
   background-color: #f5f5f5;
   border-radius: 4px;
@@ -6275,7 +6277,7 @@ tbody.collapse.in {
 .pagination {
   display: inline-block;
   padding-left: 0;
-  margin: 20px 0;
+  margin: 22px 0;
   border-radius: 4px;
 }
 /* line 10, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_pagination.scss */
@@ -6345,7 +6347,7 @@ tbody.collapse.in {
 .pagination-lg > li > a,
 .pagination-lg > li > span {
   padding: 10px 16px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.33333;
 }
 /* line 12, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_pagination.scss */
@@ -6365,7 +6367,7 @@ tbody.collapse.in {
 .pagination-sm > li > a,
 .pagination-sm > li > span {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
 }
 /* line 12, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_pagination.scss */
@@ -6384,7 +6386,7 @@ tbody.collapse.in {
 /* line 6, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_pager.scss */
 .pager {
   padding-left: 0;
-  margin: 20px 0;
+  margin: 22px 0;
   list-style: none;
   text-align: center;
 }
@@ -6525,7 +6527,7 @@ a.label:hover, a.label:focus {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   color: #fff;
   line-height: 1;
@@ -6590,7 +6592,7 @@ a.badge:hover, a.badge:focus {
 /* line 18, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_jumbotron.scss */
 .jumbotron p {
   margin-bottom: 15px;
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 200;
 }
 /* line 24, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_jumbotron.scss */
@@ -6600,8 +6602,8 @@ a.badge:hover, a.badge:focus {
 /* line 28, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_jumbotron.scss */
 .container .jumbotron, .container-fluid .jumbotron {
   border-radius: 6px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 /* line 35, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_jumbotron.scss */
 .jumbotron .container {
@@ -6621,7 +6623,7 @@ a.badge:hover, a.badge:focus {
   /* line 49, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_jumbotron.scss */
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 63px;
+    font-size: 72px;
   }
 }
 
@@ -6629,7 +6631,7 @@ a.badge:hover, a.badge:focus {
 .thumbnail {
   display: block;
   padding: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   line-height: 1.42857;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -6650,7 +6652,7 @@ a.badge:hover, a.badge:focus {
 /* line 27, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_thumbnails.scss */
 .thumbnail .caption {
   padding: 9px;
-  color: #333333;
+  color: #000;
 }
 
 /* line 34, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_thumbnails.scss */
@@ -6663,7 +6665,7 @@ a.thumbnail.active {
 /* line 9, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_alerts.scss */
 .alert {
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   border: 1px solid transparent;
   border-radius: 4px;
 }
@@ -6779,8 +6781,8 @@ a.thumbnail.active {
 /* line 26, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_progress-bars.scss */
 .progress {
   overflow: hidden;
-  height: 20px;
-  margin-bottom: 20px;
+  height: 22px;
+  margin-bottom: 22px;
   background-color: #f5f5f5;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -6792,8 +6794,8 @@ a.thumbnail.active {
   float: left;
   width: 0%;
   height: 100%;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 22px;
   color: #fff;
   text-align: center;
   background-color: #d52329;
@@ -7171,7 +7173,7 @@ button.list-group-item-danger.active:focus {
 
 /* line 7, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_panels.scss */
 .panel {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -7209,7 +7211,7 @@ button.list-group-item-danger.active:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 18px;
   color: inherit;
 }
 /* line 39, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_panels.scss */
@@ -7433,7 +7435,7 @@ button.list-group-item-danger.active:focus {
 
 /* line 222, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_panels.scss */
 .panel-group {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 /* line 226, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_panels.scss */
 .panel-group .panel {
@@ -7671,7 +7673,7 @@ button.list-group-item-danger.active:focus {
 /* line 6, ../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_close.scss */
 .close {
   float: right;
-  font-size: 21px;
+  font-size: 24px;
   font-weight: bold;
   line-height: 1;
   color: #000;
@@ -7880,7 +7882,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Raleway", sans-serif;
+  font-family: "Yantramanav", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7895,7 +7897,7 @@ button.close {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-size: 12px;
+  font-size: 14px;
   opacity: 0;
   filter: alpha(opacity=0);
 }
@@ -8018,7 +8020,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Yantramanav", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8033,7 +8035,7 @@ button.close {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ccc;
@@ -8063,7 +8065,7 @@ button.close {
 .popover-title {
   margin: 0;
   padding: 8px 14px;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
   border-radius: 5px 5px 0 0;
@@ -8811,6 +8813,12 @@ body {
 }
 
 /* line 10, ../assets/sass/base/_layout.scss */
+section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+/* line 15, ../assets/sass/base/_layout.scss */
 .bg-img {
   position: fixed;
   z-index: 1;
@@ -8823,7 +8831,7 @@ body {
   background-position: top center;
   background-size: cover;
 }
-/* line 22, ../assets/sass/base/_layout.scss */
+/* line 27, ../assets/sass/base/_layout.scss */
 .bg-img:before {
   content: '';
   position: fixed;
@@ -8852,7 +8860,7 @@ body {
 /* line 1, ../assets/sass/components/_angles.scss */
 .angles {
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -8952,21 +8960,55 @@ nav ul li a:hover:before, .nav ul li a:hover:before {
   text-align: center;
   padding: 32px 0;
   color: #ffffff;
+  position: relative;
 }
-/* line 7, ../assets/sass/layouts/_hero.scss */
+/* line 8, ../assets/sass/layouts/_hero.scss */
 .hero .logo {
   margin-top: 50px;
 }
-/* line 10, ../assets/sass/layouts/_hero.scss */
+/* line 11, ../assets/sass/layouts/_hero.scss */
 .hero .logo img {
   max-width: 350px;
   margin: 0 auto;
 }
-/* line 16, ../assets/sass/layouts/_hero.scss */
-.hero h1 {
-  font-size: 60px;
-}
-/* line 20, ../assets/sass/layouts/_hero.scss */
+/* line 17, ../assets/sass/layouts/_hero.scss */
 .hero h2 {
   font-size: 30px;
+}
+
+/* line 1, ../assets/sass/layouts/_about.scss */
+.about {
+  background: #f9f9f9;
+}
+
+/* line 3, ../assets/sass/layouts/_featured_athletes.scss */
+.featured_athletes .angles .angle {
+  text-align: center;
+  background: #d52329;
+  display: block;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -moz-transform: skewY(-21deg);
+  -ms-transform: skewY(-21deg);
+  -webkit-transform: skewY(-21deg);
+  transform: skewY(-21deg);
+  transform-origin: 0 0;
+}
+/* line 21, ../assets/sass/mixins/_angle.scss */
+.featured_athletes .angles .angle._first {
+  bottom: -90%;
+}
+/* line 25, ../assets/sass/mixins/_angle.scss */
+.featured_athletes .angles .angle._second {
+  bottom: -111%;
+}
+/* line 29, ../assets/sass/mixins/_angle.scss */
+.featured_athletes .angles .angle._third {
+  bottom: -134%;
 }

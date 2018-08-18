@@ -7,6 +7,11 @@ body {
     margin:0;
 }
 
+section {
+    padding-top:$spacing * 4;
+    padding-bottom:$spacing * 4;
+}
+
 .bg-img {
     position:fixed;
     z-index:1;

@@ -1,0 +1,7 @@
+.featured_athletes {
+    .angles {
+        .angle {
+            @include angle($brand-primary, true);
+        }
+    }
+}
