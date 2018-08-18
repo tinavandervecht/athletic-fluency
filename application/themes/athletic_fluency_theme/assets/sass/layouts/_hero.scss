@@ -1,0 +1,23 @@
+.hero {
+    min-height:100vh;
+    text-align:center;
+    padding:($spacing * 2) 0;
+    color:#ffffff;
+
+    .logo {
+        margin-top:50px;
+
+        img {
+            max-width:350px;
+            margin:0 auto;
+        }
+    }
+
+    h1 {
+        font-size:60px;
+    }
+
+    h2 {
+        font-size:30px;
+    }
+}

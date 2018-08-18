@@ -1,0 +1,31 @@
+main {
+    z-index:2;
+    position:relative;
+}
+
+body {
+    margin:0;
+}
+
+.bg-img {
+    position:fixed;
+    z-index:1;
+    width:100%;
+    height:100vh;
+    top:0;
+    left:0;
+    background:url('../images/hero-image.jpg');
+    background-repeat:no-repeat;
+    background-position:top center;
+    background-size:cover;
+
+    &:before {
+        content:'';
+        position:fixed;
+        background:rgba(0,0,0,0.6);
+        top:0;
+        left:0;
+        width:100%;
+        height:100vh;
+    }
+}

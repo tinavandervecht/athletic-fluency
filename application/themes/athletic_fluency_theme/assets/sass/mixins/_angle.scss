@@ -1,0 +1,32 @@
+@mixin angle($color, $flip: false) {
+    text-align: center;
+    background: $color;
+    display: block;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+    @include opacity(.4);
+
+    @if $flip {
+        @include transform(skewY(21deg * -1));
+        transform-origin: 0 0;
+    } @else {
+        @include transform(skewY(21deg));
+        transform-origin: 100% 0;
+    }
+
+    &._first {
+        bottom: -90%;
+    }
+
+    &._second {
+        bottom: -111%;
+    }
+
+    &._third {
+        bottom: -134%;
+    }
+}

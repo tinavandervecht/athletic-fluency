@@ -1,0 +1,12 @@
+.btn-link {
+    color:#FFFFFF;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:12px;
+    letter-spacing:2px;
+
+    &:hover, &:focus {
+        text-decoration:none;
+        color:#FFFFFF;
+    }
+}
