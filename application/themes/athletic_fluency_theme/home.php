@@ -11,6 +11,8 @@ defined('C5_EXECUTE') or die("Access Denied."); ?>
     <?php include('elements/about.php'); ?>
 
     <?php include('elements/featured_athletes.php'); ?>
+
+    <div id="map"></div>
 </main>
 
 <?php include('elements/footer.php'); ?>

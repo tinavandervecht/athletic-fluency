@@ -4,7 +4,9 @@ window.GLOBAL = {
 }
 
 var FeaturedAthletesSlider = require('./components/featured-athletes-slider');
+var Map = require('./components/map');
 
 $(document).ready(function () {
     FeaturedAthletesSlider.init();
+    Map.init();
 });

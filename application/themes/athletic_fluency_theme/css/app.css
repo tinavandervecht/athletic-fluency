@@ -8802,7 +8802,7 @@ img {
 }
 
 /* line 1, ../assets/sass/base/_layout.scss */
-main {
+main, footer {
   z-index: 2;
   position: relative;
 }
@@ -8855,6 +8855,12 @@ section {
 .btn-link:hover, .btn-link:focus {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+/* line 1, ../assets/sass/components/_map.scss */
+#map {
+  width: 100%;
+  height: 500px;
 }
 
 /* line 2, ../assets/sass/components/_sliders.scss */
@@ -9011,8 +9017,9 @@ nav ul li a:hover:before, .nav ul li a:hover:before {
 /* line 1, ../assets/sass/layouts/_featured_athletes.scss */
 .featured_athletes {
   color: #FFFFFF;
+  position: relative;
 }
-/* line 5, ../assets/sass/layouts/_featured_athletes.scss */
+/* line 6, ../assets/sass/layouts/_featured_athletes.scss */
 .featured_athletes .angles .angle {
   text-align: center;
   background: #d52329;
@@ -9043,11 +9050,11 @@ nav ul li a:hover:before, .nav ul li a:hover:before {
 .featured_athletes .angles .angle._third {
   bottom: -134%;
 }
-/* line 10, ../assets/sass/layouts/_featured_athletes.scss */
+/* line 11, ../assets/sass/layouts/_featured_athletes.scss */
 .featured_athletes .featured-athletes-slider {
   margin-top: 80px;
 }
-/* line 13, ../assets/sass/layouts/_featured_athletes.scss */
+/* line 14, ../assets/sass/layouts/_featured_athletes.scss */
 .featured_athletes .featured-athletes-slider .slick-slide {
   background: #000;
   padding: 48px;
@@ -9055,7 +9062,7 @@ nav ul li a:hover:before, .nav ul li a:hover:before {
   text-transform: uppercase;
   font-size: 14px;
 }
-/* line 20, ../assets/sass/layouts/_featured_athletes.scss */
+/* line 21, ../assets/sass/layouts/_featured_athletes.scss */
 .featured_athletes .featured-athletes-slider .slick-slide img {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -9063,4 +9070,24 @@ nav ul li a:hover:before, .nav ul li a:hover:before {
   width: 150px;
   height: 150px;
   margin: 0 auto 48px auto;
+}
+
+/* line 1, ../assets/sass/layouts/_footer.scss */
+footer, .footer {
+  background: #000;
+  color: #fff;
+  padding: 48px 0;
+}
+/* line 6, ../assets/sass/layouts/_footer.scss */
+footer h3, .footer h3 {
+  color: #d52329;
+}
+/* line 10, ../assets/sass/layouts/_footer.scss */
+footer a, .footer a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 15, ../assets/sass/layouts/_footer.scss */
+footer .copyright, .footer .copyright {
+  margin-top: 32px;
 }
