@@ -8936,23 +8936,19 @@ section {
 }
 
 /* line 2, ../assets/sass/components/_navigation.scss */
-nav ul, .nav ul {
-  list-style-type: none;
+nav ul, .nav ul, .mobile_nav ul {
+  margin: 0;
+  padding: 0;
 }
-/* line 5, ../assets/sass/components/_navigation.scss */
-nav ul li, .nav ul li {
-  display: inline;
-  margin: 0 16px;
-}
-/* line 9, ../assets/sass/components/_navigation.scss */
-nav ul li a, .nav ul li a {
+/* line 6, ../assets/sass/components/_navigation.scss */
+nav ul li a, .nav ul li a, .mobile_nav ul li a {
   position: relative;
   font-family: "Raleway", sans-serif;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-/* line 15, ../assets/sass/components/_navigation.scss */
-nav ul li a:before, .nav ul li a:before {
+/* line 12, ../assets/sass/components/_navigation.scss */
+nav ul li a:before, .nav ul li a:before, .mobile_nav ul li a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -8969,8 +8965,8 @@ nav ul li a:before, .nav ul li a:before {
   -o-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-/* line 28, ../assets/sass/components/_navigation.scss */
-nav ul li a:hover:before, .nav ul li a:hover:before {
+/* line 25, ../assets/sass/components/_navigation.scss */
+nav ul li a:hover:before, .nav ul li a:hover:before, .mobile_nav ul li a:hover:before {
   visibility: visible;
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
@@ -8978,12 +8974,82 @@ nav ul li a:hover:before, .nav ul li a:hover:before {
   transform: scaleX(1);
 }
 
-/* line 37, ../assets/sass/components/_navigation.scss */
+/* line 35, ../assets/sass/components/_navigation.scss */
+nav ul, .nav ul {
+  list-style-type: none;
+}
+/* line 38, ../assets/sass/components/_navigation.scss */
+nav ul li, .nav ul li {
+  display: inline;
+  margin: 0 16px;
+}
+
+/* line 45, ../assets/sass/components/_navigation.scss */
 .social_icons {
   margin-top: -5px;
   position: absolute;
   right: 0;
   top: 0;
+}
+
+/* line 52, ../assets/sass/components/_navigation.scss */
+.mobile_menu_btn {
+  float: left;
+  cursor: pointer;
+}
+
+/* line 57, ../assets/sass/components/_navigation.scss */
+.mobile_nav_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+  display: none;
+  cursor: pointer;
+}
+/* line 68, ../assets/sass/components/_navigation.scss */
+.mobile_nav_overlay.open {
+  display: block;
+}
+
+/* line 73, ../assets/sass/components/_navigation.scss */
+.mobile_nav {
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  left: -100%;
+  width: 90%;
+  height: 100%;
+  z-index: 4;
+  background: #000;
+  padding: 32px;
+  -webkit-transition: left 0.3s;
+  -o-transition: left 0.3s;
+  transition: left 0.3s;
+}
+@media (min-width: 768px) {
+  /* line 73, ../assets/sass/components/_navigation.scss */
+  .mobile_nav {
+    width: 50%;
+  }
+}
+/* line 89, ../assets/sass/components/_navigation.scss */
+.mobile_nav ul li {
+  margin: 16px 0;
+}
+/* line 93, ../assets/sass/components/_navigation.scss */
+.mobile_nav .close_nav {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  text-align: right;
+}
+/* line 100, ../assets/sass/components/_navigation.scss */
+.mobile_nav.open {
+  left: 0;
 }
 
 /*-- Layout Styles --*/
@@ -9072,6 +9138,11 @@ nav ul li a:hover:before, .nav ul li a:hover:before {
   margin: 0 auto 48px auto;
 }
 
+/* line 1, ../assets/sass/layouts/_details_section.scss */
+#details_section {
+  padding: 0;
+}
+
 /* line 1, ../assets/sass/layouts/_gallery.scss */
 .gallery {
   color: #FFFFFF;
@@ -9139,6 +9210,11 @@ nav ul li a:hover:before, .nav ul li a:hover:before {
 .gallery .gallery-slider .gallery-item:hover .video-btn {
   opacity: 1;
   filter: alpha(opacity=100);
+}
+
+/* line 1, ../assets/sass/layouts/_contact_us_section.scss */
+#contact_us_section {
+  padding: 0;
 }
 
 /* line 1, ../assets/sass/layouts/_footer.scss */

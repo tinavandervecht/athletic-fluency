@@ -12,9 +12,14 @@ defined('C5_EXECUTE') or die("Access Denied."); ?>
 
     <?php include('elements/featured_athletes.php'); ?>
 
+    <section id="details_section">
+    </section>
+
     <?php include('elements/gallery.php'); ?>
 
-    <div id="map"></div>
+    <section id="contact_us_section">
+        <div id="map"></div>
+    </section>
 </main>
 
 <div class="modal fade" id="youtubeModal" tabindex="-1" role="dialog">

@@ -8,9 +8,9 @@ updates/*
 concrete/packages/*
 application/languages/*
 
-application/themes/tease_company_theme/js/*
-application/themes/tease_company_theme/css/*
-application/themes/tease_company_theme/images/*
+application/themes/athletic_fluency_theme/js/*
+application/themes/athletic_fluency_theme/css/*
+application/themes/athletic_fluency_theme/images/*
 application/config/*
 
 .htaccess

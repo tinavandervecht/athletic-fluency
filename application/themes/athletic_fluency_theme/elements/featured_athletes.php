@@ -1,4 +1,4 @@
-<section class="featured_athletes">
+<section class="featured_athletes" id="athletes_section">
     <div class="angles">
         <div class="angle _first"></div>
         <div class="angle _second"></div>

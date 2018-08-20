@@ -1,24 +1,74 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 'use strict';
 
+require('bootstrap-sass');
+
+var _featuredAthletesSlider = require('./components/featured-athletes-slider');
+
+var _featuredAthletesSlider2 = _interopRequireDefault(_featuredAthletesSlider);
+
+var _gallerySlider = require('./components/gallery-slider');
+
+var _gallerySlider2 = _interopRequireDefault(_gallerySlider);
+
+var _animatePageScroll = require('./components/animate-page-scroll');
+
+var _animatePageScroll2 = _interopRequireDefault(_animatePageScroll);
+
+var _map = require('./components/map');
+
+var _map2 = _interopRequireDefault(_map);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 window.GLOBAL = {
     nextBtn: '<button type="button" class="slick-next"><span class="fa fa-angle-right"></span></button>',
     prevBtn: '<button type="button" class="slick-prev"><span class="fa fa-angle-left"></span></button>'
 };
 
-require('bootstrap-sass');
-
-var FeaturedAthletesSlider = require('./components/featured-athletes-slider');
-var GallerySlider = require('./components/gallery-slider');
-var Map = require('./components/map');
-
 $(document).ready(function () {
-    FeaturedAthletesSlider.init();
-    GallerySlider.init();
-    Map.init();
+    _featuredAthletesSlider2.default.init();
+    _gallerySlider2.default.init();
+    _map2.default.init();
+
+    /*-- Desktop Navigation Click Functionality --*/
+    $('.site_nav a').click(function (e) {
+        e.preventDefault();
+        var sectionID = $(this).attr('href');
+
+        _animatePageScroll2.default.init(sectionID);
+    });
+
+    /*-- Mobile Navigation Toggling --*/
+    $('.mobile_menu_btn, .mobile_nav .close_nav, .mobile_nav_overlay').click(function () {
+        $('.mobile_nav').toggleClass('open');
+        $('.mobile_nav_overlay').toggleClass('open');
+    });
+
+    /*-- Mobile Navigation Click Functionality --*/
+    $('.mobile_nav a').click(function (e) {
+        e.preventDefault();
+        var sectionID = $(this).attr('href');
+
+        $('.mobile_nav').removeClass('open');
+        $('.mobile_nav_overlay').removeClass('open');
+
+        _animatePageScroll2.default.init(sectionID);
+    });
 });
 
-},{"./components/featured-athletes-slider":2,"./components/gallery-slider":3,"./components/map":4,"bootstrap-sass":5}],2:[function(require,module,exports){
+},{"./components/animate-page-scroll":2,"./components/featured-athletes-slider":3,"./components/gallery-slider":4,"./components/map":5,"bootstrap-sass":6}],2:[function(require,module,exports){
+'use strict';
+
+exports.init = init;
+
+function init(id) {
+    $('html, body').animate({
+        scrollTop: $(id).offset().top
+    }, 500);
+}
+
+},{}],3:[function(require,module,exports){
 'use strict';
 
 exports.init = init;
@@ -38,7 +88,7 @@ function init() {
     });
 }
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 'use strict';
 
 exports.init = init;
@@ -57,7 +107,7 @@ function init() {
     });
 }
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 "use strict";
 
 exports.init = init;
@@ -87,7 +137,7 @@ function loadMap() {
     });
 }
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
