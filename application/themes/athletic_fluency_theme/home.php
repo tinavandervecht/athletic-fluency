@@ -13,6 +13,8 @@ defined('C5_EXECUTE') or die("Access Denied."); ?>
     <?php include('elements/featured_athletes.php'); ?>
 
     <section id="details_section">
+        <?php include('elements/general_information.php'); ?>
+        <?php include('elements/classes.php'); ?>
     </section>
 
     <?php include('elements/gallery.php'); ?>

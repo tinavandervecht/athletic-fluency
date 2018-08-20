@@ -9141,6 +9141,158 @@ nav ul li, .nav ul li {
 /* line 1, ../assets/sass/layouts/_details_section.scss */
 #details_section {
   padding: 0;
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+/* line 7, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section, #details_section #classes_section {
+  float: left;
+  min-height: 100vh;
+  display: flex;
+  padding-left: 48px;
+  padding-right: 48px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  flex-grow: 1;
+  color: #fff;
+  position: relative;
+}
+/* line 21, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section .content, #details_section #classes_section .content {
+  display: table;
+}
+/* line 25, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section .closed-content, #details_section #classes_section .closed-content {
+  cursor: pointer;
+  padding: 16px 32px;
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+  line-height: 50em;
+}
+/* line 33, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section .closed-content, #details_section #general_information_section .open-content, #details_section #classes_section .closed-content, #details_section #classes_section .open-content {
+  display: none;
+}
+/* line 37, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section .btn-wrapper, #details_section #classes_section .btn-wrapper {
+  margin-top: 16px;
+  width: 100%;
+  text-align: center;
+}
+/* line 43, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section button.toggle_section, #details_section #classes_section button.toggle_section {
+  color: #fff;
+  -moz-border-radius: 32px;
+  -webkit-border-radius: 32px;
+  border-radius: 32px;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 16px 48px;
+  border: 2px solid transparent;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+/* line 53, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section button.toggle_section:hover, #details_section #general_information_section button.toggle_section.hovered, #details_section #classes_section button.toggle_section:hover, #details_section #classes_section button.toggle_section.hovered {
+  background: none;
+}
+/* line 60, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section button.reset_items, #details_section #classes_section button.reset_items {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  background: none;
+  border: none;
+}
+/* line 71, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section.not-focused, #details_section #classes_section.not-focused {
+  padding: 0;
+  flex-grow: 0 !important;
+}
+/* line 75, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section.focused, #details_section #classes_section.focused {
+  flex-grow: 1 !important;
+}
+/* line 80, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section {
+  background: #d52329;
+}
+/* line 83, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section button.toggle_section {
+  background: #000;
+}
+/* line 86, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section button.toggle_section:hover, #details_section #general_information_section button.toggle_section.hovered {
+  border-color: #000;
+}
+/* line 91, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section .tooltip-inner {
+  background-color: #d52329 !important;
+  color: #fff;
+}
+/* line 96, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section .tooltip.top .tooltip-arrow {
+  border-top-color: #d52329 !important;
+}
+/* line 100, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section .tooltip.right .tooltip-arrow {
+  border-right-color: #d52329 !important;
+}
+/* line 104, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section .tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #d52329 !important;
+}
+/* line 108, ../assets/sass/layouts/_details_section.scss */
+#details_section #general_information_section .tooltip.left .tooltip-arrow {
+  border-left-color: #d52329 !important;
+}
+/* line 113, ../assets/sass/layouts/_details_section.scss */
+#details_section #classes_section {
+  background: #000;
+}
+/* line 116, ../assets/sass/layouts/_details_section.scss */
+#details_section #classes_section button.toggle_section {
+  background: #d52329;
+}
+/* line 119, ../assets/sass/layouts/_details_section.scss */
+#details_section #classes_section button.toggle_section:hover, #details_section #classes_section button.toggle_section.hovered {
+  border-color: #d52329;
+}
+@media (max-width: 992px) {
+  /* line 1, ../assets/sass/layouts/_details_section.scss */
+  #details_section {
+    display: block;
+  }
+  /* line 128, ../assets/sass/layouts/_details_section.scss */
+  #details_section #general_information_section, #details_section #classes_section {
+    float: none;
+    width: 100%;
+    min-height: auto;
+    padding: 48px !important;
+  }
+  /* line 134, ../assets/sass/layouts/_details_section.scss */
+  #details_section #general_information_section .content, #details_section #general_information_section .closed-content, #details_section #classes_section .content, #details_section #classes_section .closed-content {
+    display: none !important;
+  }
+  /* line 138, ../assets/sass/layouts/_details_section.scss */
+  #details_section #general_information_section .open-content, #details_section #classes_section .open-content {
+    display: block !important;
+  }
+  /* line 141, ../assets/sass/layouts/_details_section.scss */
+  #details_section #general_information_section .open-content .reset_items, #details_section #classes_section .open-content .reset_items {
+    display: none !important;
+  }
 }
 
 /* line 1, ../assets/sass/layouts/_gallery.scss */

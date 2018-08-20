@@ -9,11 +9,13 @@ import FeaturedAthleteSlider from './components/featured-athletes-slider';
 import GallerySlider from './components/gallery-slider';
 import AnimatePageScroll from './components/animate-page-scroll';
 import GoogleMap from './components/map';
+import AnimateToggleSection from './components/animate-toggle-sections';
 
 $(document).ready(function () {
     FeaturedAthleteSlider.init();
     GallerySlider.init();
     GoogleMap.init();
+    AnimateToggleSection.init();
 
     /*-- Desktop Navigation Click Functionality --*/
     $('.site_nav a').click(function(e) {
@@ -39,5 +41,4 @@ $(document).ready(function () {
 
         AnimatePageScroll.init(sectionID);
     })
-
 });

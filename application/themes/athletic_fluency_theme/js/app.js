@@ -19,6 +19,10 @@ var _map = require('./components/map');
 
 var _map2 = _interopRequireDefault(_map);
 
+var _animateToggleSections = require('./components/animate-toggle-sections');
+
+var _animateToggleSections2 = _interopRequireDefault(_animateToggleSections);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 window.GLOBAL = {
@@ -30,6 +34,7 @@ $(document).ready(function () {
     _featuredAthletesSlider2.default.init();
     _gallerySlider2.default.init();
     _map2.default.init();
+    _animateToggleSections2.default.init();
 
     /*-- Desktop Navigation Click Functionality --*/
     $('.site_nav a').click(function (e) {
@@ -57,7 +62,7 @@ $(document).ready(function () {
     });
 });
 
-},{"./components/animate-page-scroll":2,"./components/featured-athletes-slider":3,"./components/gallery-slider":4,"./components/map":5,"bootstrap-sass":6}],2:[function(require,module,exports){
+},{"./components/animate-page-scroll":2,"./components/animate-toggle-sections":3,"./components/featured-athletes-slider":4,"./components/gallery-slider":5,"./components/map":6,"bootstrap-sass":7}],2:[function(require,module,exports){
 'use strict';
 
 exports.init = init;
@@ -69,6 +74,74 @@ function init(id) {
 }
 
 },{}],3:[function(require,module,exports){
+'use strict';
+
+exports.init = init;
+
+function init() {
+    initializeMouseOverListeners();
+    onInitialSectionOpen();
+    onSwitchSections();
+    onResetSections();
+}
+
+function initializeMouseOverListeners() {
+    $("#details_section .btn-wrapper").mouseover(function () {
+        $(this).parent().parent('.half-item').css('flex-grow', '2');
+        $('button', $(this)).addClass('hovered');
+    });
+
+    $("#details_section .btn-wrapper").mouseleave(function () {
+        $(this).parent().parent('.half-item').css('flex-grow', '1');
+        $('button', $(this)).removeClass('hovered');
+    });
+}
+
+function onInitialSectionOpen() {
+    $("#details_section .toggle_section").click(function () {
+        var id = $(this).data('area-id');
+
+        $('#details_section .half-item .content').fadeOut('fast').promise().done(function () {
+            $('#details_section .half-item:not(#' + id + ')').addClass('not-focused');
+            $('#' + id).addClass('focused');
+        }).promise().done(function () {
+            $('#details_section .half-item:not(#' + id + ') .closed-content').fadeIn('fast');
+            $('#details_section .half-item:not(#' + id + ') .closed-content').tooltip();
+            $('#' + id + ' .open-content').fadeIn('fast');
+        });
+    });
+}
+
+function onSwitchSections() {
+    $('#details_section .half-item .closed-content').click(function () {
+        var id = $(this).parent().attr('id');
+
+        $('#details_section .half-item .open-content, .half-item .closed-content').fadeOut('fast').promise().done(function () {
+            $('#' + id + ' .closed-content').tooltip('destroy');
+        }).promise().done(function () {
+            $('#details_section .half-item:not(#' + id + ')').removeClass('focused').addClass('not-focused');
+            $('#' + id).removeClass('not-focused').addClass('focused');
+        }).promise().done(function () {
+            $('#details_section .half-item:not(#' + id + ') .closed-content').fadeIn('fast');
+            $('#details_section .half-item:not(#' + id + ') .closed-content').tooltip();
+            $('#' + id + ' .open-content').fadeIn('fast');
+        });
+    });
+}
+
+function onResetSections() {
+    $("#details_section .reset_items").click(function () {
+        var id = $(this).data('area-id');
+
+        $('#details_section .half-item .open-content, .half-item .closed-content').fadeOut('fast').promise().done(function () {
+            $('#details_section .half-item').removeClass('focused').removeClass('not-focused');
+        }).promise().done(function () {
+            $('#details_section .half-item .content').fadeIn('fast');
+        });
+    });
+}
+
+},{}],4:[function(require,module,exports){
 'use strict';
 
 exports.init = init;
@@ -88,7 +161,7 @@ function init() {
     });
 }
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 'use strict';
 
 exports.init = init;
@@ -107,7 +180,7 @@ function init() {
     });
 }
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 "use strict";
 
 exports.init = init;
@@ -137,7 +210,7 @@ function loadMap() {
     });
 }
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
