@@ -9072,6 +9072,75 @@ nav ul li a:hover:before, .nav ul li a:hover:before {
   margin: 0 auto 48px auto;
 }
 
+/* line 1, ../assets/sass/layouts/_gallery.scss */
+.gallery {
+  color: #FFFFFF;
+  position: relative;
+}
+/* line 5, ../assets/sass/layouts/_gallery.scss */
+.gallery .gallery-slider {
+  margin-top: 48px;
+}
+/* line 8, ../assets/sass/layouts/_gallery.scss */
+.gallery .gallery-slider .gallery-item {
+  margin: 16px 0;
+  overflow: hidden;
+  position: relative;
+}
+/* line 13, ../assets/sass/layouts/_gallery.scss */
+.gallery .gallery-slider .gallery-item img {
+  width: 100%;
+  height: auto;
+}
+/* line 18, ../assets/sass/layouts/_gallery.scss */
+.gallery .gallery-slider .gallery-item .description {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  -webkit-transition: top 0.4s;
+  -o-transition: top 0.4s;
+  transition: top 0.4s;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+}
+/* line 28, ../assets/sass/layouts/_gallery.scss */
+.gallery .gallery-slider .gallery-item .video-btn {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+/* line 41, ../assets/sass/layouts/_gallery.scss */
+.gallery .gallery-slider .gallery-item .video-btn .fa-play {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100px;
+  height: 100px;
+  padding: 20px 33px;
+}
+/* line 51, ../assets/sass/layouts/_gallery.scss */
+.gallery .gallery-slider .gallery-item:hover .description {
+  top: 0;
+}
+/* line 55, ../assets/sass/layouts/_gallery.scss */
+.gallery .gallery-slider .gallery-item:hover .video-btn {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
 /* line 1, ../assets/sass/layouts/_footer.scss */
 footer, .footer {
   background: #000;
