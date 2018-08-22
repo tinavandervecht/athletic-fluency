@@ -1,7 +1,8 @@
 <?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 
 <footer class="footer">
-    <div class="container">
+    <img class="highlights" src="<?php echo $this->getThemePath(); ?>/images/footer-highlights.png" />
+    <div class="container content">
         <div class="row">
             <div class="col-md-4">
                 <?php

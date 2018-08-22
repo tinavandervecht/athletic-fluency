@@ -2,6 +2,8 @@ footer, .footer {
     background:#000;
     color:#fff;
     padding:($spacing * 3) 0;
+    position:relative;
+    overflow:hidden;
 
     h3 {
         color:$brand-primary;
@@ -10,6 +12,14 @@ footer, .footer {
     a {
         color:#fff;
         text-decoration:none;
+    }
+
+    .highlights {
+        position:absolute;
+        bottom:0;
+        right:0;
+        z-index:-1;
+        height:90%;
     }
 
     .copyright {
