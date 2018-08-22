@@ -11,10 +11,11 @@
 
     .slick-arrow {
         position: absolute;
-        top: 34%;
+        top: 47%;
         background: none;
         border: none;
         font-size: 26px;
+        z-index:2;
 
         &.slick-prev {
             left:-50px;
@@ -23,5 +24,11 @@
         &.slick-next {
             right:-50px;
         }
+    }
+
+    @media (max-width:$screen-md) {
+        width:calc(100% - 100px);
+        margin-left:auto;
+        margin-right:auto;
     }
 }

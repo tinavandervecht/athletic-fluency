@@ -8,7 +8,7 @@ function init() {
         nextArrow: window.GLOBAL.nextBtn,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 1
                 }
