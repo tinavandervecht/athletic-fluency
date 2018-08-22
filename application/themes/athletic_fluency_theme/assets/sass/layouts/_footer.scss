@@ -25,4 +25,8 @@ footer, .footer {
     .copyright {
         margin-top:$spacing * 2;
     }
+
+    @media(max-width:$screen-md) {
+        text-align:center;
+    }
 }

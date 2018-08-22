@@ -9,8 +9,10 @@
         margin-top:50px;
 
         img {
-            max-width:350px;
             margin:0 auto;
+            @media(min-width:$screen-md) {
+                max-width:350px;
+            }
         }
     }
 
