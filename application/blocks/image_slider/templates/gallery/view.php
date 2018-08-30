@@ -10,7 +10,7 @@ $c = Page::getCurrentPage(); ?>
                         <?php $f = File::getByID($slide['fID']); ?>
                         <?php if (is_object($f)) : ?>
                             <div class="gallery-item">
-                                <img src="<?php echo BASE_URL . Core::make('html/image', array($f, false))->getTag()->src; ?>"  />
+                                <img src="<?php echo BASE_URL . Core::make('html/image', array($f, false))->getTag()->src; ?>" alt="Featured Image" />
                                 <?php if ($slide['linkURL']): ?>
                                     <div class="video-btn" data-url="<?php echo $slide['linkURL']; ?>"
                                         data-toggle="modal"

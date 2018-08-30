@@ -19,6 +19,12 @@
         color:#fff;
         position:relative;
 
+        @media(min-width:$screen-md) {
+            h2, .h2 {
+                font-size: $font-size-h1;
+            }
+        }
+
         .content {
             display:table;
             width:100%;
