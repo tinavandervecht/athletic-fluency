@@ -15,6 +15,7 @@
         justify-content: center;
         @include transition(0.4s);
         flex-grow:1;
+        flex-basis:0;
         color:#fff;
         position:relative;
 
@@ -41,7 +42,7 @@
             text-align:center;
         }
 
-        button.toggle_section {
+        button.toggle_section, .btn-secondary {
             color:#fff;
             @include border-radius($spacing * 2);
             outline:none;
@@ -81,7 +82,7 @@
     #general_information_section {
         background:$brand-primary;
 
-        button.toggle_section {
+        button.toggle_section, .btn-secondary {
             background:#000;
 
             &:hover, &.hovered {
@@ -114,7 +115,7 @@
     #classes_section {
         background:#000;
 
-        button.toggle_section {
+        button.toggle_section, .btn-secondary {
             background:$brand-primary;
 
             &:hover, &.hovered {
