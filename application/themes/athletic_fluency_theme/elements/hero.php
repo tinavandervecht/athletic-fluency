@@ -21,10 +21,10 @@
             </nav>
         </span>
         <div class="social_icons">
-            <a href="" target="_blank" class="btn btn-link">
+            <a href="https://www.facebook.com/athleticfluency/" target="_blank" class="btn btn-link">
                 <span class="fa fa-facebook-square fa-2x"></span>
             </a>
-            <a href="" target="_blank" class="btn btn-link">
+            <a href="https://www.instagram.com/athleticfluency/" target="_blank" class="btn btn-link">
                 <span class="fa fa-instagram fa-2x"></span>
             </a>
         </div>

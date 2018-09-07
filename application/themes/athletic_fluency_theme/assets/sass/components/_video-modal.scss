@@ -1,6 +1,17 @@
 #youtubeModal {
+    .close-icon {
+        float:right;
+        color:#ffffff;
+        cursor:pointer;
+        margin-left:5px;
+    }
+    .modal-content {
+        overflow:hidden;
+    }
     .modal-body {
         padding: 0 !important;
+        height:340px;
+        overflow:hidden;
     }
     iframe {
         width:100%;

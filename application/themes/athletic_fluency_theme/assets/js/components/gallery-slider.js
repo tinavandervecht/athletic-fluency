@@ -12,4 +12,8 @@ function init() {
         let url = $(this).data('url');
         $('#iframeYoutube').attr('src', url);
     })
+
+    $('#youtubeModal').on('hidden.bs.modal', function () {
+        $('#iframeYoutube').attr('src', '');
+    })
 }
