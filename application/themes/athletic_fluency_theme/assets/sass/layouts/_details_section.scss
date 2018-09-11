@@ -48,23 +48,6 @@
             text-align:center;
         }
 
-        button.toggle_section, .btn-secondary {
-            color:#fff;
-            @include border-radius($spacing * 2);
-            outline:none;
-            font-family:$font-family-serif;
-            text-transform:uppercase;
-            font-size:$spacing;
-            padding: $spacing ($spacing * 3);
-            border:2px solid transparent;
-
-            &:hover, &.hovered {
-                background:none;
-            }
-
-            @include transition(0.4s);
-        }
-
         button.reset_items {
             position:absolute;
             right:$spacing;
@@ -88,11 +71,13 @@
     #general_information_section {
         background:$brand-primary;
 
-        button.toggle_section, .btn-secondary {
+        button.toggle_section {
             background:#000;
 
             &:hover, &.hovered {
                 border-color:#000;
+                color:#fff;
+                background:transparent;
             }
         }
 
@@ -121,11 +106,13 @@
     #classes_section {
         background:#000;
 
-        button.toggle_section, .btn-secondary {
+        button.toggle_section {
             background:$brand-primary;
 
             &:hover, &.hovered {
                 border-color:$brand-primary;
+                color:#fff;
+                background:transparent;
             }
         }
     }

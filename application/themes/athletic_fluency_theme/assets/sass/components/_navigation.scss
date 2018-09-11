@@ -8,6 +8,10 @@ nav, .nav, .mobile_nav {
                 font-family:$font-family-serif;
                 padding-left:0 !important;
                 padding-right:0 !important;
+                display: inline-block;
+                cursor: pointer;
+                border: 1px solid transparent;
+                padding: 6px 12px;
 
                 &:before {
                     content: "";
@@ -47,6 +51,13 @@ nav, .nav {
     position:absolute;
     right:0;
     top:0;
+
+    a {
+        display: inline-block;
+        cursor: pointer;
+        border: 1px solid transparent;
+        padding: 6px 12px;
+    }
 }
 
 .mobile_menu_btn {

@@ -1,38 +1,4 @@
 .new_users {
     background:$brand-grey;
     text-align:center;
-
-    .btn {
-        color:#fff;
-        @include border-radius($spacing * 2);
-        outline:none;
-        font-family:$font-family-serif;
-        text-transform:uppercase;
-        font-size:$spacing;
-        padding: $spacing ($spacing * 3);
-        border:2px solid transparent;
-
-        &:hover, &.hovered {
-            background:none;
-        }
-
-        @include transition(0.4s);
-    }
-
-    .btn-secondary {
-        background:#000;
-
-        &:hover, &.hovered {
-            border-color:#000;
-        }
-    }
-
-    .btn-primary {
-        background:$brand-primary;
-
-        &:hover, &.hovered {
-            border-color:$brand-primary;
-            color:$brand-primary;
-        }
-    }
 }

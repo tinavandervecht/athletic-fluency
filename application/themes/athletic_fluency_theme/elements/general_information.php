@@ -5,7 +5,7 @@
             $a->display($c);
         ?>
         <div class="btn-wrapper">
-            <button type="button" data-area-id="general_information_section" class="toggle_section">Learn More</button>
+            <button type="button" data-area-id="general_information_section" class="btn btn-secondary toggle_section">Learn More</button>
         </div>
     </div>
     <div class="closed-content" data-toggle="tooltip" data-placement="right" title="View General Information">

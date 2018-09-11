@@ -10,3 +10,49 @@
         color:#FFFFFF;
     }
 }
+
+.btn {
+    color:#fff;
+    @include border-radius($spacing * 2);
+    outline:none;
+    font-family:$font-family-serif;
+    text-transform:uppercase;
+    font-size:$spacing;
+    padding: $spacing ($spacing * 3);
+    border:2px solid transparent;
+
+    &:hover, &.hovered {
+        background:none;
+    }
+
+    @include transition(0.4s);
+
+    &.btn-white {
+        color:#000;
+        background:#fff;
+
+        &:hover, &:focus {
+            color:#fff;
+            border-color:#fff;
+            background:transparent;
+        }
+    }
+
+    &.btn-primary {
+        &:hover, &.hovered {
+            color:$brand-primary;
+            border-color:$brand-primary;
+            background:transparent;
+        }
+    }
+
+    &.btn-secondary {
+        background:#000;
+
+        &:hover, &.hovered {
+            color:#000;
+            border-color:#000;
+            background:transparent;
+        }
+    }
+}

@@ -8,6 +8,20 @@ defined('C5_EXECUTE') or die("Access Denied."); ?>
 <main>
     <?php include('elements/hero.php'); ?>
 
+    <section class="promo_video">
+        <div class="promo_video_overlay"></div>
+        <div class="container content">
+            <div class="row">
+                <div class="col-md-12">
+                    <?php
+                        $a = new Area('Promo Video Content');
+                        $a->display($c);
+                    ?>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <?php include('elements/about.php'); ?>
 
     <?php include('elements/featured_athletes.php'); ?>

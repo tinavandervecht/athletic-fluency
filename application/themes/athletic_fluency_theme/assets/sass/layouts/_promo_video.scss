@@ -1,0 +1,30 @@
+.promo_video {
+    background:url('../images/gym-bg.jpeg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    color:#ffffff;
+    text-align:center;
+    position:relative;
+
+    .promo_video_overlay {
+        position:absolute;
+        height:100%;
+        width:100%;
+        left:0;
+        top:0;
+        z-index:1;
+        background:rgba(0,0,0,0.6);
+    }
+    .content {
+        z-index:2;
+        position:relative;
+    }
+    button {
+        margin:64px 0;
+
+        span {
+            margin-right:16px;
+        }
+    }
+}
